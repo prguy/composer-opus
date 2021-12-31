@@ -1,0 +1,212 @@
+/* **----------- General -------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 960px;
+  /* text-decoration: none; */
+  /* list-style: none; */
+}
+
+body {
+  font-family: 'Montserrat', serif;
+}
+
+/* **---------- Logo and Navigation ------------- */
+nav {
+  height: 50px;
+  width: 100%;
+}
+
+label.logo {
+  color: rgb(46, 165, 42);
+  font-size: 32px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 12px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(46, 165, 42);
+  font-size: 12px;
+  /* padding: 7px 13px; */
+  /* border-radius: 3px; */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* **---------- Cols Settings All Pages ------------- */
+.wrapper {
+  padding: 30px 30px 60px;
+}
+
+.periods,
+.content-tml,
+.related-content,
+.content-about {
+  margin: 0 -15px;
+  flex-wrap: wrap; /* Lets Flex wrap when possible */
+  display: flex;
+}
+
+.col {
+  margin: 0 15px 30px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* makes both cols the same width. Otherwise
+Flex sets the width according to the context */
+.col-50 {
+  /* 2 cols 50% each */
+  width: calc(50% - 30px);
+}
+
+.col-33 {
+  /* 3 cols 33% each */
+  width: calc(33.33% - 30px);
+}
+
+.col-25 {
+  /* 4 cols 25% each */
+  width: calc(25% - 30px);
+}
+
+.col-100 {
+  /* 1 col 100% each */
+  width: calc(100% -30px);
+}
+
+/* **************** HOME page *************** */
+
+.periods div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#brque {
+  background-color: cadetblue;
+}
+
+#clsic {
+  background-color: skyblue;
+}
+
+#rmntic {
+  background-color: cornflowerblue;
+}
+
+#mdrnist {
+  background-color: darkseagreen;
+}
+
+.periods div h4,
+h5 {
+  text-align: center;
+}
+.addional-info {
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+/* ************ TIMELINE page ************ */
+
+#content-brq {
+  color: cadetblue;
+}
+#content-clss {
+  color: skyblue;
+}
+
+#content-rmn {
+  color: cornflowerblue;
+}
+
+#content-mdr {
+  color: darkseagreen;
+}
+
+.content-tml h5 {
+  /* font-size: 1em; */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+.content-tml p {
+  font-size: 0.8em;
+  /* margin: 0px; */
+  /* justify-content: flex-start; */
+}
+
+/* ************ RELATED page ************ */
+
+/* ************ ABOUT page ************ */
+
+/* **------ All Titles Settings (h2, h3) ------------ */
+
+.page-title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.span-title {
+  text-align: center;
+  margin-top: 0px;
+  /* margin-bottom: 0.3em; */
+}
+
+/* **---------- Responsive Settings ------------ */
+
+@media screen and (max-width: 960px) {
+  /* In sync with flex-wrap */
+  .col-25 {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 730px) {
+  /* In sync with flex-wrap */
+  .col-50,
+  .col-33,
+  .col-25 {
+    width: calc(100% - 30px);
+  }
+
+  nav ul li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* In sync with flex-wrap */
+  .col-50,
+  .col-33,
+  .col-25 {
+    width: calc(100% - 30px);
+  }
+
+  label.logo {
+    font-size: 27px;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}

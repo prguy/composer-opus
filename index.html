@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Composers</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Great Composers of Classical Music Portal. Listings of catalogued works by opus number an other indexes"
+    />
+    <meta
+      name="keywords"
+      content="music, composer, composers, opus, concerto, symphony,symphonies, eras, baroque, classical, romantic, modernist, piano, violin, cello, flute, harp, french forn, oboe, Bach, conductor, orchestra, Beethoven, Mozart, Haydn, Stravinsky, Mahler"
+    />
+    <meta name="author" content="Patrick Rodriguez" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- *********** HEADER SECTION ************** -->
+    <nav>
+      <label class="logo">Matters of Note</label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="related.html">Related</a></li>
+        <!-- <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
+
+    <!-- ********* COMPOSERS SECTION CONTENT *********** -->
+    <br />
+    <br />
+    <h2 class="page-title">GREAT COMPOSERS</h2>
+    <h2 class="page-title">COMPREHENSIVE WORKS</h2>
+    <h3 class="span-title">
+      Chose any composer to see complete list of compositions
+    </h3>
+    <br />
+
+    <!-- *************** BAROQUE **************** -->
+    <div class="wrapper">
+      <div class="periods">
+        <div class="col col-25" id="brque">
+          <form name="baroqueOpus">
+            <h4 id="baroque">Baroque Period</h4>
+            <h5>(1600-1750)</h5>
+            <select
+              name="optionList"
+              id="baroqueOpus"
+              onchange="handleSelect(this.form)"
+            >
+              <option value="nothing">Select a Composer</option>
+              <option value="Tomaso_Albinoni">Albinoni</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Bach-Werke-Verzeichnis#List_of_compositions_by_BWV_number"
+              >
+                JS_Bach
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Marc-Antoine_Charpentier#Charpentier's_works"
+              >
+                Charpentier
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Arcangelo_Corelli#Works"
+              >
+                Corelli
+              </option>
+              <option value="Fran%C3%A7ois_Couperin">Couperin</option>
+              <option
+                value="https://symposium.music.org/index.php/30/item/2066-frederick-the-great-flutist-and-composer"
+              >
+                Frederick II
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Francesco_Geminiani#Works"
+              >
+                Geminiani
+              </option>
+              <option value="George_Frideric_Handel">Handel</option>
+              <option value="Girolamo_Frescobaldi">Frescobaldi</option>
+
+              <option
+                value="https://en.wikipedia.org/wiki/Pietro_Locatelli#Music"
+              >
+                Locatelli
+              </option>
+              <option value="Jean-Baptiste_Lully">Lully</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Alessandro_Marcello#Works"
+              >
+                A_Marcello
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Benedetto_Marcello#Works"
+              >
+                B_Marcello
+              </option>
+              <option value="Claudio_Monteverdi">Monteverdi</option>
+              <option value="Johann_Pachelbel">Pachelbel</option>
+
+              <option value="Henry_Purcell">Purcell</option>
+              <option value="Johann_Joachim_Quantz">Quantz</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Jean-Philippe_Rameau#List_of_works"
+              >
+                Rameau
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/List_of_solo_keyboard_sonatas_by_Domenico_Scarlatti"
+              >
+                Scarlatti
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Giuseppe_Tartini#Compositions"
+              >
+                Tartini
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Georg_Philipp_Telemann#Partial_list_of_works"
+              >
+                Telemann
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Giuseppe_Torelli#Selected_works"
+              >
+                Torelli
+              </option>
+              <option value="Antonio_Vivaldi">Vivaldi</option>
+            </select>
+          </form>
+        </div>
+        <!-- ************* CLASSIC **************** -->
+        <div class="col col-25" id="clsic">
+          <form name="classicOpus">
+            <h4 id="classic">Classic Period</h4>
+            <h5>(1750-1820)</h5>
+            <select
+              name="optionList"
+              id="classicList"
+              onchange="handleSelect(this.form)"
+            >
+              <option value="nothing">Select a Composer</option>
+              <option value="Carl_Philipp_Emanuel_Bach">CPE Bach</option>
+              <option value="Johann_Christian_Bach">JC Bach</option>
+              <option value="Ludwig_van_Beethoven">Beethoven</option>
+              <option value="Luigi_Boccherini">Boccherini</option>
+              <option value="Fran%C3%A7ois-Adrien_Boieldieu">Boieldieu</option>
+              <option value="Ferdinando_Carulli">Carulli</option>
+              <option value="Muzio_Clementi">Clementi</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Johann_Baptist_Cramer#Selected_works"
+              >
+                Cramer
+              </option>
+              <option value="Jan_Ladislav_Dussek">Dussek</option>
+              <option
+                value="https://en.wikipedia.org/wiki/List_of_operas_by_Baldassare_Galuppi"
+              >
+                Galuppi
+              </option>
+              <option value="Christoph_Willibald_Gluck">Gluck</option>
+              <option value="Joseph_Haydn">Haydn</option>
+              <option value="Johann_Nepomuk_Hummel">Hummel</option>
+              <option value="Wolfgang_Amadeus_Mozart">Mozart</option>
+              <option value="Niccol%C3%B2_Paganini">Paganini</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Giovanni_Battista_Pergolesi#Works"
+              >
+                Pergolesi
+              </option>
+              <option value="Gioachino_Rossini">Rossini</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Chevalier_de_Saint-Georges#Works"
+              >
+                Saint-Georges
+              </option>
+              <option value="Antonio_Salieri">Salieri</option>
+              <option value="Franz_Schubert">Schubert</option>
+              <option value="Carl_Maria_von_Weber">Weber</option>
+            </select>
+          </form>
+        </div>
+        <!-- ************* ROMANTIC ***************** -->
+        <div class="col col-25" id="rmntic">
+          <form name="romanticOpus">
+            <h4 id="romantic">Romantic Period</h4>
+            <h5>(1800-1910)</h5>
+            <select
+              name="optionList"
+              id="romanticList"
+              onchange="handleSelect(this.form)"
+            >
+              <option value="nothing">Select a Composer</option>
+              <option value="https://en.wikipedia.org/wiki/Adolphe_Adam#Works">
+                Adam
+              </option>
+              <option value="Isaac_Alb%C3%A9niz">Albeniz</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Vincenzo_Bellini#Complete_works_of_Bellini"
+              >
+                Bellini
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/List_of_works_by_Hector_Berlioz"
+              >
+                Berlioz
+              </option>
+              <option value="Georges_Bizet">Bizet</option>
+              <option value="Alexander_Borodin">Borodin</option>
+              <option value="Johannes_Brahms">Brahms</option>
+              <option value="Max_Bruch">Bruch</option>
+              <option value="Anton_Bruckner">Bruckner</option>
+              <option value="Fr%C3%A9d%C3%A9ric_Chopin_by_opus_number">
+                Chopin
+              </option>
+              <option value="Emmanuel_Chabrier">Chabrier</option>
+              <option value="L%C3%A9o_Delibes">Delibes</option>
+              <option
+                value="https://en.wikipedia.org/wiki/List_of_operas_by_Gaetano_Donizetti"
+              >
+                Donizetti
+              </option>
+              <option value="Anton%C3%ADn_Dvo%C5%99%C3%A1k">Dvorak</option>
+              <option value="Edward_Elgar">Elgar</option>
+              <option value="Gabriel_Faur%C3%A9">Faure</option>
+              <option value="C%C3%A9sar_Franck">Franck</option>
+              <option value="Enrique_Granados">Granados</option>
+              <option value="Edvard_Grieg">Grieg</option>
+              <option value="Leo%C5%A1_Jan%C3%A1%C4%8Dek">Janacek</option>
+              <option value="%C3%89douard_Lalo">Lalo</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Joseph_Lanner#Compositions"
+              >
+                Lanner
+              </option>
+              <option
+                value="https://en.wikipedia.org/wiki/Ruggero_Leoncavallo#Operas"
+              >
+                Leoncavallo
+              </option>
+              <option value="Franz_Liszt">Liszt</option>
+              <option value="Felix_Mendelssohn">Mendelssohn</option>
+              <option value="Modest_Mussorgsky">Mussorgsky</option>
+              <option value="Giacomo_Puccini">Puccini</option>
+              <option value="Nikolai_Rimsky-Korsakov">Rimsky-Korsakov</option>
+              <option value="Camille_Saint-Sa%C3%ABns">Saint-Saens</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Pablo_de_Sarasate#List_of_compositions"
+              >
+                Sarasate
+              </option>
+              <option value="Robert_Schumann">Schumann</option>
+              <option value="Bed%C5%99ich_Smetana">Smetana</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Johann_Strauss_I#Works"
+              >
+                J Strauss I
+              </option>
+              <option value="Johann_Strauss_II">J Strauss II</option>
+              <option value="Francisco_T%C3%A1rrega">Tarrega</option>
+              <option value="Pyotr_Ilyich_Tchaikovsky">Tchaikovsky</option>
+              <option value="Giuseppe_Verdi">Verdi</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Henri_Vieuxtemps#Major_works"
+              >
+                Vieuxtemps
+              </option>
+              <option value="Richard_Wagner">Wagner</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Henryk_Wieniawski#Works"
+              >
+                Wieniawski
+              </option>
+            </select>
+          </form>
+        </div>
+        <!-- *************** MODERNIST ************** -->
+        <div class="col col-25" id="mdrnist">
+          <form name="modernistOpus">
+            <h4 id="modernist">Modernist Period</h4>
+            <h5>(1890-1975)</h5>
+            <select
+              name="optionList"
+              id="modernistList"
+              onchange="handleSelect(this.form)"
+            >
+              <option value="nothing">Select a Composer</option>
+              <option value="https://en.wikipedia.org/wiki/Samuel_Barber#Music">
+                Barber
+              </option>
+              <option value="B%C3%A9la_Bart%C3%B3k">Bartok</option>
+              <option value="Alban_Berg">Berg</option>
+              <option value="Ernest_Bloch">Bloch</option>
+              <option value="Benjamin_Britten">Britten</option>
+              <option value="Aaron_Copland">Copland</option>
+              <option value="Claude_Debussy">Debussy</option>
+              <option
+                value="https://en.wikipedia.org/wiki/George_Enescu#Selected_works"
+              >
+                Enescu
+              </option>
+              <option value="Manuel_de_Falla">Falla</option>
+              <option value="George_Gershwin">Gershwin</option>
+              <option value="Paul_Hindemith">Hindemith</option>
+              <option value="Aram_Khachaturian">Khachaturian</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Zolt%C3%A1n_Kod%C3%A1ly#Selected_works"
+              >
+                Kodaly
+              </option>
+              <option value="Fritz_Kreisler">Kreisler</option>
+              <option
+                value="https://en.wikipedia.org/wiki/List_of_operas_and_operettas_by_Franz_Leh%C3%A1r"
+              >
+                Lehar
+              </option>
+              <option value="Gustav_Mahler">Mahler</option>
+              <option value="Ennio_Morricone">Morricone</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Carl_Orff#List_of_compositions"
+              >
+                Orff
+              </option>
+              <option value="Sergei_Prokofiev">Prokofiev</option>
+              <option value="Maurice_Ravel">Ravel</option>
+              <option
+                value="https://en.wikipedia.org/wiki/Joaqu%C3%ADn_Rodrigo#Works"
+              >
+                Rodrigo
+              </option>
+              <option value="Arnold_Schoenberg">Schoenberg</option>
+              <option value="Dmitri_Shostakovich">Schostakovich</option>
+              <option value="Jean_Sibelius">Sibelius</option>
+              <option value="Richard_Strauss">R Strauss</option>
+              <option value="Igor_Stravinsky">Stravinsky</option>
+              <option value="Heitor_Villa-Lobos">Villa-Lobos</option>
+              <option value="John_Williams">Williams</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="addional-info">
+      <!-- <h3>Aditional Info:</h3> -->
+      <p>
+        Medieval and Renaissance music periods, as well as, composer's
+        biographies can be found in the:
+        <a href="related.html" title="Related Topics Page">RELATED</a>, page.
+      </p>
+    </div>
+
+    <script>
+      const WIKI = 'https://en.wikipedia.org/wiki/List_of_compositions_by_';
+
+      function handleSelect(opusList) {
+        var selIndex = opusList.optionList.selectedIndex;
+        var selNameTxt = opusList.optionList.options[selIndex].text;
+        var selName = opusList.optionList.options[selIndex].value;
+
+        if (selNameTxt === 'JS_Bach') {
+        } else if (selNameTxt === 'Adam') {
+        } else if (selNameTxt === 'Barber') {
+        } else if (selNameTxt === 'Bellini') {
+        } else if (selNameTxt === 'Berlioz') {
+        } else if (selNameTxt === 'Charpentier') {
+        } else if (selNameTxt === 'Corelli') {
+        } else if (selNameTxt === 'Cramer') {
+        } else if (selNameTxt === 'Donizetti') {
+        } else if (selNameTxt === 'Enescu') {
+        } else if (selNameTxt === 'Frederick II') {
+        } else if (selNameTxt === 'Galuppi') {
+        } else if (selNameTxt === 'Geminiani') {
+        } else if (selNameTxt === 'Kodaly') {
+        } else if (selNameTxt === 'Lanner') {
+        } else if (selNameTxt === 'Lehar') {
+        } else if (selNameTxt === 'Leoncavallo') {
+        } else if (selNameTxt === 'Locatelli') {
+        } else if (selNameTxt === 'A_Marcello') {
+        } else if (selNameTxt === 'B_Marcello') {
+        } else if (selNameTxt === 'Pergolesi') {
+        } else if (selNameTxt === 'Orff') {
+        } else if (selNameTxt === 'Rameau') {
+        } else if (selNameTxt === 'Rodrigo') {
+        } else if (selNameTxt === 'Saint-Georges') {
+        } else if (selNameTxt === 'Sarasate') {
+        } else if (selNameTxt === 'Scarlatti') {
+        } else if (selNameTxt === 'J Strauss I') {
+        } else if (selNameTxt === 'Tartini') {
+        } else if (selNameTxt === 'Torelli') {
+        } else if (selNameTxt === 'Telemann') {
+        } else if (selNameTxt === 'Vieuxtemps') {
+        } else if (selNameTxt === 'Wieniawski') {
+        } else {
+          selName = WIKI + selName;
+        }
+
+        //alert(selName);
+        window.open(selName);
+      }
+    </script>
+  </body>
+</html>
