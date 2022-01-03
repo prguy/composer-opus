@@ -8,6 +8,7 @@
   max-width: 960px;
   text-decoration: none;
   list-style: none;
+  /* background-image: url(images/Music-wave.jpg); */
 }
 
 body {
@@ -18,6 +19,7 @@ body {
 /* **---------- Logo and Navigation ------------- */
 nav {
   /* background: #0082e6; */
+  /* background-image: url(images/music-wave2.png); */
   height: 60px;
   width: 100%;
 }
@@ -116,6 +118,9 @@ a.active {
   padding: 1em;
   margin: 3px;
   justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 80px;
 }
 
 .baroque {
@@ -197,9 +202,7 @@ h5 {
   display: flex;
   /* position: relative; */
   padding-top: 30px;
-  width: 50%;
-  /* padding-left: -1%; */
-  /* padding-right: 10%; */
+  width: 70%;
 }
 
 .related-content div {
@@ -218,13 +221,6 @@ h5 {
   border-radius: 6px;
   box-sizing: border-box;
   width: calc(50% - 30px);
-} */
-
-/* @media screen and (max-width: 480px) {
-  
-  .rel-1 {
-    width: 100%;
-  }
 } */
 
 /* ************ ABOUT page ************ */
@@ -256,17 +252,9 @@ h5 {
 
 @media (max-width: 735px) {
   .periods,
-  .content-tml,
-  .related-content {
+  .related-content,
+  .content-tml {
     flex-direction: column;
     align-items: center;
   }
 }
-
-/* @media (max-width: 480px) {
-  .periods,
-  .content-tml,
-  .related-content {
-    flex-direction: column;
-  }
-} */
