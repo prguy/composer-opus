@@ -1,29 +1,33 @@
-/* **----------- General -------------*/
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* **----------- General -------------*/
 
 * {
   margin: 0 auto;
   padding: 0;
   max-width: 960px;
-  /* text-decoration: none; */
-  /* list-style: none; */
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   font-family: 'Montserrat', serif;
+  font-weight: 400;
 }
 
 /* **---------- Logo and Navigation ------------- */
 nav {
-  height: 50px;
+  /* background: #0082e6; */
+  height: 60px;
   width: 100%;
 }
 
 label.logo {
+  color: white;
   color: rgb(46, 165, 42);
-  font-size: 32px;
-  padding: 0 50px;
+  font-size: 30px;
+  line-height: 70px;
+  padding: 0 30px;
   font-weight: bold;
 }
 
@@ -34,82 +38,103 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 12px;
+  line-height: 80px;
   margin: 0 5px;
 }
 
 nav ul li a {
-  color: rgb(46, 165, 42);
+  color: white;
+  /* color: rgb(46, 165, 42); */
   font-size: 12px;
-  /* padding: 7px 13px; */
-  /* border-radius: 3px; */
+  /* padding: 7px 13px;
+  border-radius: 3px; */
   text-transform: uppercase;
   text-decoration: none;
 }
 
-/* **---------- Cols Settings All Pages ------------- */
-.wrapper {
-  padding: 30px 30px 60px;
+a.active,
+a:hover {
+  /* background: #1b9bff; */
+  transition: 0.5s;
 }
 
-.periods,
-.content-tml,
-.related-content,
-.content-about {
-  margin: 0 -15px;
-  flex-wrap: wrap; /* Lets Flex wrap when possible */
-  display: flex;
+.checkbtn {
+  font-size: 30px;
+  /* color: white; */
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  /* display: none; */
 }
 
-.col {
-  margin: 0 15px 30px;
-  padding: 20px;
-  box-sizing: border-box;
+#check {
+  display: none;
 }
 
-/* makes both cols the same width. Otherwise
-Flex sets the width according to the context */
-.col-50 {
-  /* 2 cols 50% each */
-  width: calc(50% - 30px);
+@media (max-width: 960px) {
+  .checkbtn {
+    display: block;
+  }
 }
 
-.col-33 {
-  /* 3 cols 33% each */
-  width: calc(33.33% - 30px);
+ul {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 0px;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
 }
 
-.col-25 {
-  /* 4 cols 25% each */
-  width: calc(25% - 30px);
+nav ul li {
+  display: block;
+  margin: 30px 0;
+  line-height: 30px;
 }
 
-.col-100 {
-  /* 1 col 100% each */
-  width: calc(100% -30px);
+a:hover,
+a.active {
+  color: #0082e6;
+}
+
+#check:checked ~ ul {
+  left: 0;
 }
 
 /* **************** HOME page *************** */
 
-.periods div {
+.periods {
   display: flex;
-  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.periods div {
+  padding: 1em;
+  margin: 3px;
   justify-content: center;
 }
 
-#brque {
+.baroque {
+  flex: 1;
   background-color: cadetblue;
 }
 
-#clsic {
+.classic {
+  flex: 1;
   background-color: skyblue;
 }
 
-#rmntic {
+.romantic {
+  flex: 1;
   background-color: cornflowerblue;
 }
 
-#mdrnist {
+.modernist {
+  flex: 1;
   background-color: darkseagreen;
 }
 
@@ -117,6 +142,7 @@ Flex sets the width according to the context */
 h5 {
   text-align: center;
 }
+
 .addional-info {
   padding: 0 50px;
   font-weight: bold;
@@ -124,37 +150,94 @@ h5 {
 
 /* ************ TIMELINE page ************ */
 
-#content-brq {
+/* -- Settings for All Four Periods (4 boxes) -- */
+.content-tml {
+  display: flex;
+  padding-left: 30px;
+  /* left: 2%;
+  right: 5%; */
+}
+
+.content-brq {
+  flex: 1;
   color: cadetblue;
 }
-#content-clss {
+
+.content-clss {
+  flex: 1;
   color: skyblue;
 }
 
-#content-rmn {
+.content-rmn {
+  flex: 1;
   color: cornflowerblue;
 }
 
-#content-mdr {
+.content-mdr {
+  flex: 1;
   color: darkseagreen;
 }
 
 .content-tml h5 {
-  /* font-size: 1em; */
-  margin-top: 0;
+  font-size: 1em;
+  margin-top: 0.7em;
   margin-bottom: 0.5em;
   text-align: left;
 }
 
 .content-tml p {
   font-size: 0.8em;
-  /* margin: 0px; */
-  /* justify-content: flex-start; */
 }
 
 /* ************ RELATED page ************ */
 
+.related-content {
+  /* Lets Flex wrap when possible */
+  /* flex-wrap: wrap; */
+  display: flex;
+  /* position: relative; */
+  padding-top: 30px;
+  width: 50%;
+  /* padding-left: -1%; */
+  /* padding-right: 10%; */
+}
+
+.related-content div {
+  flex: 1;
+  text-align: center;
+  /* border: 2px red solid; */
+}
+
+.related-content ul {
+  margin-top: 0px;
+}
+
+/* .rel-1 {
+  margin: 0 15px 30px;
+  padding: 20px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: calc(50% - 30px);
+} */
+
+/* @media screen and (max-width: 480px) {
+  
+  .rel-1 {
+    width: 100%;
+  }
+} */
+
 /* ************ ABOUT page ************ */
+
+.content-about {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content-about p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
 
 /* **------ All Titles Settings (h2, h3) ------------ */
 
@@ -171,42 +254,19 @@ h5 {
 
 /* **---------- Responsive Settings ------------ */
 
-@media screen and (max-width: 960px) {
-  /* In sync with flex-wrap */
-  .col-25 {
-    width: calc(50% - 30px);
+@media (max-width: 735px) {
+  .periods,
+  .content-tml,
+  .related-content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 730px) {
-  /* In sync with flex-wrap */
-  .col-50,
-  .col-33,
-  .col-25 {
-    width: calc(100% - 30px);
+/* @media (max-width: 480px) {
+  .periods,
+  .content-tml,
+  .related-content {
+    flex-direction: column;
   }
-
-  nav ul li {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  /* In sync with flex-wrap */
-  .col-50,
-  .col-33,
-  .col-25 {
-    width: calc(100% - 30px);
-  }
-
-  label.logo {
-    font-size: 27px;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-}
+} */
