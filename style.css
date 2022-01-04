@@ -99,7 +99,8 @@ nav ul li {
 
 a:hover,
 a.active {
-  color: #0082e6;
+  /* color: #0082e6; */
+  color: #4ce8f6;
 }
 
 #check:checked ~ ul {
@@ -150,6 +151,7 @@ h5 {
 
 .addional-info {
   padding: 0 50px;
+  padding-top: 1.3em;
   font-weight: bold;
 }
 
@@ -159,8 +161,6 @@ h5 {
 .content-tml {
   display: flex;
   padding-left: 30px;
-  /* left: 2%;
-  right: 5%; */
 }
 
 .content-brq {
@@ -215,14 +215,6 @@ h5 {
   margin-top: 0px;
 }
 
-/* .rel-1 {
-  margin: 0 15px 30px;
-  padding: 20px;
-  border-radius: 6px;
-  box-sizing: border-box;
-  width: calc(50% - 30px);
-} */
-
 /* ************ ABOUT page ************ */
 
 .content-about {
@@ -233,6 +225,10 @@ h5 {
 .content-about p {
   font-size: 1em;
   line-height: 1.6em;
+  padding-top: 1em;
+}
+.content-about h2 {
+  padding-top: 0.7em;
 }
 
 /* **------ All Titles Settings (h2, h3) ------------ */
@@ -245,7 +241,6 @@ h5 {
 .span-title {
   text-align: center;
   margin-top: 0px;
-  /* margin-bottom: 0.3em; */
 }
 
 /* **---------- Responsive Settings ------------ */
