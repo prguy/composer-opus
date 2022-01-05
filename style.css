@@ -218,7 +218,7 @@ h5 {
 /* ************ ABOUT page ************ */
 
 .content-about {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -229,6 +229,15 @@ h5 {
 }
 .content-about h2 {
   padding-top: 0.7em;
+}
+
+.content-about {
+  display: flex;
+  width: 90%;
+}
+
+.wrapper {
+  flex: 1;
 }
 
 /* **------ All Titles Settings (h2, h3) ------------ */
