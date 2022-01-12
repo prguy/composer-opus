@@ -5,21 +5,21 @@
 * {
   margin: 0 auto;
   padding: 0;
-  max-width: 960px;
+  /* max-width: 960px; */
   text-decoration: none;
   list-style: none;
-  /* background-image: url(images/Music-wave.jpg); */
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Montserrat', serif;
   font-weight: 400;
+  min-height: 100vh;
 }
 
 /* **---------- Logo and Navigation ------------- */
+
 nav {
-  /* background: #0082e6; */
-  /* background-image: url(images/music-wave2.png); */
   height: 60px;
   width: 100%;
 }
@@ -29,7 +29,8 @@ label.logo {
   color: rgb(46, 165, 42);
   font-size: 30px;
   line-height: 70px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
+  padding-left: 30px;
   font-weight: bold;
 }
 
@@ -46,38 +47,27 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  /* color: rgb(46, 165, 42); */
   font-size: 12px;
-  /* padding: 7px 13px;
-  border-radius: 3px; */
   text-transform: uppercase;
   text-decoration: none;
 }
 
 a.active,
 a:hover {
-  /* background: #1b9bff; */
   transition: 0.5s;
 }
 
 .checkbtn {
   font-size: 30px;
-  /* color: white; */
   float: right;
+  display: block;
   line-height: 80px;
-  margin-right: 40px;
+  margin-right: 60px;
   cursor: pointer;
-  /* display: none; */
 }
 
 #check {
   display: none;
-}
-
-@media (max-width: 960px) {
-  .checkbtn {
-    display: block;
-  }
 }
 
 ul {
@@ -99,7 +89,6 @@ nav ul li {
 
 a:hover,
 a.active {
-  /* color: #0082e6; */
   color: #4ce8f6;
 }
 
@@ -113,15 +102,12 @@ a.active {
   display: flex;
   padding-left: 30px;
   padding-right: 30px;
+  align-items: center;
 }
 
 .periods div {
   padding: 1em;
   margin: 3px;
-  justify-content: center;
-  align-items: center;
-  width: 140px;
-  height: 80px;
 }
 
 .baroque {
@@ -197,10 +183,8 @@ h5 {
 /* ************ RELATED page ************ */
 
 .related-content {
-  /* Lets Flex wrap when possible */
-  /* flex-wrap: wrap; */
   display: flex;
-  /* position: relative; */
+
   padding-top: 30px;
   width: 70%;
 }
@@ -208,7 +192,6 @@ h5 {
 .related-content div {
   flex: 1;
   text-align: center;
-  /* border: 2px red solid; */
 }
 
 .related-content ul {
@@ -218,7 +201,7 @@ h5 {
 /* ************ ABOUT page ************ */
 
 .content-about {
-  /* padding-top: 30px; */
+  padding-top: 40px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -253,12 +236,25 @@ h5 {
 }
 
 /* **---------- Responsive Settings ------------ */
-
-@media (max-width: 735px) {
-  .periods,
-  .related-content,
+@media screen and (max-width: 805px) {
   .content-tml {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .periods,
+  .related-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-title {
+    font-size: large;
+  }
+
+  .content-about {
+    width: 100%;
   }
 }
