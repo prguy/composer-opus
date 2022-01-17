@@ -99,15 +99,16 @@ a.active {
 /* **************** HOME page *************** */
 
 .periods {
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .periods div {
-  padding: 1em;
-  margin: 3px;
+  flex-basis: 45%;
+  padding: 3em;
+  margin: 8px;
 }
 
 .baroque {
@@ -135,10 +136,31 @@ h5 {
   text-align: center;
 }
 
+.periods p {
+  margin-bottom: 15px;
+}
+
 .addional-info {
   padding: 0 50px;
   padding-top: 1.3em;
   font-weight: bold;
+}
+
+/* **---- Slection Boxes ----------- */
+
+#baroqueOpus,
+#classicList,
+#romanticList,
+#modernistList {
+  width: 150px;
+  height: 28px;
+}
+
+/* **---- Reset Buttons ----------- */
+
+.reset {
+  width: 80px;
+  height: 28px;
 }
 
 /* ************ TIMELINE page ************ */
@@ -223,7 +245,7 @@ h5 {
   flex: 1;
 }
 
-/* **------ All Titles Settings (h2, h3) ------------ */
+/* **---- All Titles Settings (h2, h3) ----------- */
 
 .page-title {
   text-align: center;
