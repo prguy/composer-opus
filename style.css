@@ -29,7 +29,6 @@ label.logo {
   color: rgb(46, 165, 42);
   font-size: 30px;
   line-height: 70px;
-  /* padding: 0 30px; */
   padding-left: 30px;
   font-weight: bold;
 }
@@ -178,7 +177,7 @@ h5 {
 
 .content-clss {
   flex: 1;
-  color: skyblue;
+  color: rgb(84, 174, 209);
 }
 
 .content-rmn {
@@ -200,6 +199,7 @@ h5 {
 
 .content-tml p {
   font-size: 0.8em;
+  font-weight: bold;
 }
 
 /* ************ RELATED page ************ */
@@ -279,4 +279,65 @@ h5 {
   .content-about {
     width: 100%;
   }
+}
+
+/* ********** Modal settings****** */
+.bg-modal,
+.bg-modal1,
+.bg-modal2,
+.bg-modal3 {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* opacity: 0.7; */
+  position: absolute;
+  top: 0;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  display: none;
+}
+
+.modal-content,
+.modal-content1,/*  */
+.modal-content2,
+.modal-content3 {
+  width: 600px;
+  /* height: auto; */
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+  /* padding: 20px; */
+  position: relative;
+}
+
+.periods img {
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.close-button,
+.close-button1,
+.close-button2,
+.close-button3 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.button,
+.button1,
+.button2,
+.button3 {
+  /* position: absolute; */
+  margin-bottom: 20px;
 }
